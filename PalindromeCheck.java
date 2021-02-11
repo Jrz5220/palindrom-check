@@ -1,10 +1,9 @@
-package lab3;
 
 import java.util.Stack;
 import java.util.Scanner;
 
-/** Use a stack to check whether a string is a palindrome.
- * @author felix
+/** 
+ * Use a stack to check whether a string is a palindrome.
  */
 public class PalindromeCheck {
 
@@ -34,8 +33,8 @@ public class PalindromeCheck {
 			else
 				System.out.println("'" + userStr + "' is not a palindrome.");
 			
-			System.out.println("Test another string? y or n.");
-			testNextString = sc.nextLine();
+			System.out.println("Test another string? y or n");
+			testNextString = sc.nextLine().trim();
 			
 			while(!testNextString.equals("y") && !testNextString.equals("n")) {
 				System.out.println("Please enter y or n");
